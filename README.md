@@ -4,4 +4,4 @@ A static webpage for a college assignment
  
  
  You can  visit the webpage here:-
- csercoem.netlify.app
+csercoem.netlify.app
