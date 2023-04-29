@@ -5,3 +5,4 @@ A static webpage for a college assignment
  
  You can  visit the webpage here:-
 https://csercoem.netlify.app/
+https://formregisrtarsam.netlify.app/form.html
