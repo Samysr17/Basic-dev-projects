@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Form</title>
+</head>
+<body>
+    <style>
+        body{
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+      </style>
+      <div class="rounded-2xl w-[50%] h-[820px] bg-transparent border-4 border-white ml-96 mt-8 flex-col">
+        <h1 class="text-5xl mt-4 text-center text-white">REGISTRATION FORM</h1>
+        <div class="flex space-x-6">
+        <p class="p-4 ml-12 mt-16 text-2xl text-white">NAME :</p>
+        <input placeholder="Enter Your Name " class="bg-transparent rounded-2xl p-4 w-[50%] ml-40 mt-20 h-8  border-2 font-bold border-white text-white">
+      </div>
+      <div class="flex space-x-6">
+        <p class="p-4 ml-12 mt-2 text-2xl text-white">BATCH :</p>
+        <input placeholder="Enter Your Batch " class="bg-transparent rounded-2xl p-4 w-[50%] ml-12 mt-6 h-8  border-2 font-bold border-white text-white">
+      </div>
+         <div class="flex space-x-6">
+        <p class="p-4 ml-12 mt-2 text-2xl text-white">E-MAIL:</p>
+        <input placeholder="Enter Your MAil id " class="bg-transparent rounded-2xl p-4 w-[50%] ml-12 mt-6 h-8  border-2 font-bold border-white ">
+      </div>
+      <div class="flex space-x-2">
+        <p class="p-4 ml-12 mt-2 text-2xl text-white">MOBNO.</p>
+        <input placeholder="Enter Your MOBILE NO." class="bg-transparent rounded-2xl p-4 w-[50%] ml-12 mt-6 h-8  border-2 font-bold border-white ">
+      </div>
+      <div class="flex space-x-2">
+        <p class="p-4 ml-12 mt-2 text-2xl text-white">ADDRESS</p>
+        <input placeholder="Enter Your Address " class="bg-transparent rounded-2xl  w-[50%] ml-12 mt-6 h-14 p-9 border-2 font-bold border-white text-white">
+      </div>
+      <div class="flex space-x-2 text-white text-xl mt-8">
+        <p class="ml-16 ">SELECT GENDER</p>
+        <input type="radio" id="html" name="fav_language" value="HTML">
+        <label for="html">MALE</label><br>
+        <input type="radio" id="css" name="fav_language" value="CSS">
+        <label for="css">FEMALE</label><br>
+      </div>
+      <div class="mt-2 flex ">
+        <label class="p-4 ml-12 mt-2 text-2xl text-white" for="cars">CHOOSE PAYMENT OPTION:</label>
+        <select class="bg-transparent border-2 border-white w-[20%] mt-8 rounded-2xl   h-7 ml-8" name="cars" id="cars">
+          <option value="volvo">UPI</option>
+          <option value="saab">NET Banking</option>
+          <option value="opel">Credit Card</option>
+          <option value="audi">Debit Card</option>
+        </select>
+      </div>
+     
+        <div class="text-center mt-4"> <a href="index.html"><button class="bg-transparent p-3 rounded-3xl border-2 border-white w-44 text-white hover:text-xl">SUBMIT</button>
+        </div>
+        <div>
+          <ul class="">
+          <li class="flex space-x-12 mt-6"><img class="w-16 mt-2 ml-40" src="icons8-facebook-48.png">
+            <img class="w-16 mt-2" src="icons8-instagram-48.png">
+            <img class="w-16 mt-2" src="icons8-twitter-48.png">
+            <img class="w-16 mt-2" src="icons8-youtube-48.png">
+                        </li>
+                      </ul>
+        </div>
+       
+      </div>
+</body>
+</html>

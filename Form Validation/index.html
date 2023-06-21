@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Online Exam Registration</title>
+    <script src="./index.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Online Exam Registration</h2>
+      <form name="registrationForm" onsubmit="return validateForm()">
+        <h3>Personal Information</h3>
+        Name: <br /><input type="text" name="name" required /><br />
+        Email: <br /><input type="email" name="email" required /><br />
+        Mobile Number:
+        <br /><input type="tel" name="mobileNumber" required /><br />
+        Date of Birth: <br /><input type="date" name="dob" required /><br />
+
+        <h3>Educational Information</h3>
+        XII Marks: <br /><input type="text" name="xiiMarks" required /><br />
+        X Marks: <br /><input type="text" name="xMarks" required /><br />
+        Field of Study: <br /><input type="text" name="fieldOfStudy" /><br />
+        University/College: <br /><input type="text" name="university" /><br />
+        Degree: <br /><input type="text" name="degree" /><br />
+        Year of Passing: <br /><input type="text" name="yearOfPassing" /><br />
+
+        <h3>Payment Details</h3>
+        Payment Method:<br />
+        <select name="paymentMethod">
+          <option value="card">Card</option>
+          <option value="upi">UPI</option></select
+        ><br />
+
+        Card Number (Card Payment):<br />
+        <input type="text" name="cardNumber" /><br />
+        UPI ID (UPI Payment): <br /><input type="text" name="upiID" /><br />
+
+        <div class="sub-btn">
+          <input type="submit" value="Submit" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
