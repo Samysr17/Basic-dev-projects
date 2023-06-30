@@ -1,0 +1,116 @@
+<!DOCTYPE HTML>
+<html>
+<head>  
+  <script type="text/javascript">
+  window.onload = function () {
+    var chart = new CanvasJS.Chart("chartContainer",
+    {
+      title:{
+        text: "Multi-Series Line Chart with Different Marker Types"  
+      },
+
+      data: [
+      {        
+        type: "line",
+        showInLegend: true,
+        markerType: "circle",
+        legendText: "circle",
+        dataPoints: [
+        { x: 10, y: 61 },
+        { x: 20, y: 59 },
+        { x: 30, y: 50},
+        { x: 40, y: 65},
+        { x: 50, y: 95},
+        { x: 60, y: 68},
+        { x: 70, y: 58},
+        { x: 80, y: 44},
+        { x: 90, y: 56} 
+
+        ]
+      },
+      {        
+        type: "line",
+        showInLegend: true,
+        markerType: "triangle",
+        //markerSize: 10,
+        legendText: "triangle",
+        dataPoints: [
+        { x: 10, y: 31 },
+        { x: 20, y: 35},
+        { x: 30, y: 40 },
+        { x: 40, y: 45 },
+        { x: 50, y: 45 },
+        { x: 60, y: 48 },
+        { x: 70, y: 43 },
+        { x: 80, y: 41 },
+        { x: 90, y: 44}
+
+        ]
+      },
+      {        
+        type: "line",
+        showInLegend: true,
+        markerType: "square",
+        legendText: "square",
+        dataPoints: [
+        { x: 10, y: 45 },
+        { x: 20, y: 50},
+        { x: 30, y: 30 },
+        { x: 40, y: 35 },
+        { x: 50, y: 35 },
+        { x: 60, y: 38},
+        { x: 70, y: 38 },
+        { x: 80, y: 34 },
+        { x: 90, y: 28}
+
+        ]
+      },
+      {        
+        type: "line",
+        showInLegend: true,
+        legendText: "cross",
+        markerType: "cross",
+        dataPoints: [
+        { x: 10, y: 71 },
+        { x: 20, y: 55},
+        { x: 30, y: 20 },
+        { x: 40, y: 25 },
+        { x: 50, y: 27 },
+        { x: 60, y: 28 },
+        { x: 70, y: 28 },
+        { x: 80, y: 24 },
+        { x: 90, y: 14}
+
+        ]
+      },
+         {        
+        type: "line",
+        showInLegend: true,
+        legendText: "no marker",
+        markerType: "none",
+        dataPoints: [
+        { x: 10, y: 91 },
+        { x: 20, y: 85},
+        { x: 30, y: 80 },
+        { x: 40, y: 87 },
+        { x: 50, y: 77 },
+        { x: 60, y: 78 },
+        { x: 70, y: 88 },
+        { x: 80, y: 74 },
+        { x: 90, y: 84}
+
+        ]
+      }
+      ]
+    });
+
+chart.render();
+}
+</script>
+<script type="text/javascript" src="canvasjs.min.js"></script>
+</head>
+<body>
+  <div id="chartContainer" style="height: 300px; width: 50%;">
+  </div>
+</body>
+</html>

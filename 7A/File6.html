@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>  
+<html>  
+<head>    
+  <script type="text/javascript">  
+  window.onload = function () {  
+    var chart = new CanvasJS.Chart("chartContainer",  
+    {  
+       title:{  
+        text: "Golds won in 2012 London Olympics",   
+        fontWeight: "bolder",  
+        fontColor: "#008B8B",  
+        fontfamily: "tahoma",          
+        fontSize: 25,  
+        padding: 10          
+      },  
+  
+      data: [  
+      {          
+        type: "column",  
+        dataPoints: [  
+         {label: "US", y: 46 },  
+         {label: "China", y: 38},  
+         {label: "Britain", y: 29},  
+         {label: "Russia", y: 24 },  
+         {label: "South Korea", y: 13 },  
+         {label: "Germany", y: 11 },  
+         {label: "france", y: 11},  
+         {label: "Hungary", y: 8 },  
+         {label: "Australia", y: 7 },  
+         {label: "Japan", y: 7 }        
+      ]  
+    }  
+  
+      ]  
+    });  
+  
+    chart.render();  
+  }  
+  </script>  
+ <script type="text/javascript"   
+src="canvasjs.min.js">  
+</script>  
+</head>  
+<body>  
+  <div id="chartContainer" style="height: 300px; width: 75%;">  
+  </div>  
+</body>  
+</html>  

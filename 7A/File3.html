@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>  
+<html>  
+<head>    
+  <script type="text/javascript">  
+  window.onload = function () {  
+    var chart = new CanvasJS.Chart("chartContainer",  
+    {    
+      title: {  
+        text: "Axis With Custom Labels"        
+      },  
+      data: [  
+      {               
+        type: "column",  
+        dataPoints: [  
+         
+        { y: 71, label: "cat 1" },  
+        { y: 55, label: "cat 2" },  
+        { y: 50, label: "cat 3" },  
+        { y: 65, label: "cat 4" },  
+        { y: 95, label: "cat 5" },  
+        { y: 68, label: "cat 6" },  
+        { y: 28, label: "cat 7" },  
+        { y: 34, label: "cat 8" },  
+        { y: 14, label: "cat 9" }  
+        ]  
+      }  
+      ]  
+    });  
+  
+    chart.render();  
+  }  
+  </script>  
+  <script type="text/javascript"   
+src="canvasjs.min.js"></script>  
+</head>  
+<body>  
+  <div id="chartContainer" style="height: 300px; width: 75%;">  
+  
+  </div>  
+</body>  
+</html>  
