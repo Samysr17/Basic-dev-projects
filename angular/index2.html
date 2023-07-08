@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <body>
+    <div ng-app="myApp" ng-controller = "myCtrl">
+        Sorting weekdays in alphabetical/descending order:
+        <ul ng-repeat="ds in weekDays | orderBy : 'days':'true'">
+            <li>{{ds.days}}</li>
+        </ul>
+    </div>
+    <script>
+      var app = angular.module('myApp', []);
+      app.controller('myCtrl', function($scope) {
+          $scope.colname = "RCOEM";
+          $scope.weekDays2 = ['Monday','Tuesday','Wednesday'];
+          $scope.weekDays = [{days:('Monday')},{days:('Tuesday')},{days:('Wednesday')},{days:('Thursday')},{days:('Friday')},{days:('Saturday')},{days:('Sunday')}];
+      });
+    </script>
+  </body>
+</html>
